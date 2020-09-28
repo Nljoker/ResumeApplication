@@ -1,0 +1,225 @@
+*{
+    margin:0;
+    padding:0x;
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background-image: url('https://wallpaperaccess.com/full/686953.jpg'); 
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+}
+
+.profile-card {
+    width: 400px;
+    text-align: center;
+    border-radius: 8px;
+    overflow:hidden; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-header {
+    background: #545454 ;
+    padding: 60px 40px; 
+}
+
+.picture {
+    display: inline-block; 
+    padding: 8px;
+    background: linear-gradient(130deg, #74b9ff, #e66767);
+    margin:auto; 
+    border-radius: 50%;
+    background-size: 200% 200%; 
+    animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient{
+    25%{
+        background-position: left bottom;
+    }
+    50% {
+        background-position: right bottom;
+    }
+    75% {
+        background-position: right top;
+    }
+    100% {
+        background-position: left top;
+    }
+}
+
+.picture img{
+    display:block; 
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+}
+
+.name {
+    color: #f2f2f2;
+    font-size:28px; 
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.role{
+    font-size: 18px;
+    color: #e66767;
+}
+
+.specialLinks {
+    display: flex; 
+    justify-content: center;
+    margin: 20px 0; 
+    transition: .3s linear; 
+}
+
+.specialLinks a {
+    color: #f2f2f2;
+    width: 56px; 
+    font-size: 22px; 
+}
+
+.specialLinks a:hover {
+    color: #e66767;
+}
+
+.contact-btn {
+    display: inline-block; 
+    padding: 12px 50px; 
+    color: #e66767; 
+    border: 2px solid #e66767; 
+    border-radius: 6px; 
+    margin-top: 16px; 
+    transition: .3s linear; 
+}
+
+.contact-btn:hover {
+    background: #e66767;
+    color: #f2f2f2; 
+}
+
+.contact-btn a {
+    color: inherit; 
+}
+
+.card-footer {
+    background: #f4f4f4;
+    padding: 30px 10px; 
+}
+
+
+.numbers {
+    display: flex;
+    align-items: center;  
+}
+
+.item {
+    width: 100%; 
+    table-layout: fixed;
+    border-collapse: collapse;
+    padding: 12px 25px; 
+    color:#2c3a47; 
+    border: 2px solid #2c3a47; 
+    border-radius: 3px; 
+    margin-top: 2px; 
+    transition: .3s linear; 
+    cursor: pointer;
+}
+
+.item span {
+    width: 100%; 
+    font-size: 15px;
+    display: block; 
+}
+
+.item:hover{
+    background: #2c3a47;
+    color: #f2f2f2; 
+}
+
+/* .item span {
+    display: block; 
+    color: #2c3a47; 
+    font-size: 15px; 
+} */
+
+.border{
+    width: 1px; 
+    height: 30px;
+    background: #bbb;  
+
+}
+
+/* 
+h1 {
+    color:green;
+}
+
+#pictureOfMyself {
+    text-align: right;
+
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  /* @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  } */ 
